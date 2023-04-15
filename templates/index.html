@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medellin Dubai Style Hotel</title>
+    <style>
+      body {
+        background-image: url("/static/Dubai_Style_Hotel _Wallpaper.jpg");
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 50px auto;
+        max-width: 800px;
+      }
+      h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 2px 2px #333;
+      }
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+        display: inline-block;
+        color: #fff;
+        text-shadow: 1px 1px #333;
+      }
+      select,
+      input[type="date"],
+      input[type="submit"] {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      input[type="date"] {
+        margin-left: 5px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px #333;
+      }
+      input[type="submit"]:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Medellin Dubai Style Hotel</h1>
+      <form>
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination">
+          <option value="medellin">Medellin,Co</option>
+        </select>
+        <label for="rooms">Rooms &amp; Guests:</label>
+        <select id="rooms" name="rooms">
+          <option value="1-room-1-adult">1 Room, 1 Adult</option>
+        </select>
+        <label for="dates">Dates:</label>
+        <input
+          type="date"
+          id="dates"
+          name="dates"
+          value="2023-01-01"
+          readonly
+        />
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+  </body>
+</html>
